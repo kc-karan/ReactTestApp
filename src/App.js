@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 import SubmitButton from './components/Buttons/submitButton.js';
 import Dd from './components/Dropdown/threeQuestionsDropdown.js';
-import Divider from 'muicss/lib/react/divider';
+import TextField from './components/textField.js';
 
 class App extends Component {
+  var 
   render() {
     return (
       <div>
@@ -14,12 +15,15 @@ class App extends Component {
             </div>
           </span>
           <span className="mui--divider-left">
+            <p id="question" className="center-div">
+              Select one of 3 questions...
+            </p>
+            <div className="center-div">
+              <TextField />
+            </div>
             <div className="center-div">
               <SubmitButton />
             </div>
-            <p id="question">
-              Select one of 3 questions...
-            </p>
           </span>
       </div>
     );
